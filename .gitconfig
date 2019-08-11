@@ -1,3 +1,7 @@
+[user]
+        name = Jony
+        email = jony.cohenjo@gmail.com
+
 [alias]
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
@@ -120,7 +124,6 @@
 	remote = green
 
 [color "diff"]
-
 	meta = yellow bold
 	frag = magenta bold # line info
 	old = red # deletions
@@ -133,29 +136,27 @@
 	untracked = cyan
 
 [commit]
-
 	# https://help.github.com/articles/signing-commits-using-gpg/
 	gpgsign = true
 
 [diff]
-
 	# Detect copies as well as renames
 	renames = copies
 
 [diff "bin"]
-
 	# Use `hexdump` to diff binary files
 	textconv = hexdump -v -C
 
 [help]
-
 	# Automatically correct and execute mistyped commands
 	autocorrect = 1
 
 [merge]
-
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+
+[pull]
+	rebase = true
 
 [push]
 
@@ -185,3 +186,9 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[url "git@github.com:"]
+        insteadOf = https://gojp:gojp@github.com/
+
+[url "ssh://git@github.com/"]
+        insteadOf = https://github.com/
